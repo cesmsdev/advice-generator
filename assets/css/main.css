@@ -1,0 +1,78 @@
+:root {
+    --primary-light-cyan: hsl(193, 38%, 86%);
+    --primary-neon-green: hsl(150, 100%, 66%);
+
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+
+    --font-quote: 28px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dark-blue);
+    display: grid;
+    place-content: center;
+}
+
+.manrope-font {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container-quote{
+    padding: 2rem;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 1rem;
+    width: 30rem;
+    position: relative;
+}
+
+.text-advice-id{
+    color: var(--primary-neon-green);
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.text-quote{
+    font-size: var(--font-quote);
+    color: var(--primary-light-cyan);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.separator img{
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+}
+
+.btn-dice{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-neon-green);
+    transform: translate(-50%, -50%);
+}
+
+.btn-dice:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--primary-neon-green);
+}
+
+.btn-dice:active{
+    box-shadow: 0 0 20px var(--primary-neon-green) inset;
+}
