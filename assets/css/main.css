@@ -30,7 +30,7 @@ body {
     font-style: normal;
 }
 
-.container-quote{
+.container-quote {
     padding: 2rem;
     background-color: var(--dark-grayish-blue);
     border-radius: 1rem;
@@ -38,26 +38,26 @@ body {
     position: relative;
 }
 
-.text-advice-id{
+.text-advice-id {
     color: var(--primary-neon-green);
     font-size: 12px;
     text-align: center;
     letter-spacing: 5px;
 }
 
-.text-quote{
+.text-quote {
     font-size: var(--font-quote);
     color: var(--primary-light-cyan);
     text-align: center;
     margin-top: 1.5rem;
 }
 
-.separator img{
+.separator img {
     width: 100%;
     margin: 2rem 0 2rem 0;
 }
 
-.btn-dice{
+.btn-dice {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -68,11 +68,19 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.btn-dice:hover{
+.btn-dice:hover {
     cursor: pointer;
     box-shadow: 0 0 20px var(--primary-neon-green);
 }
 
-.btn-dice:active{
+.btn-dice:active {
     box-shadow: 0 0 20px var(--primary-neon-green) inset;
+}
+
+@media screen and (max-width: 550px) {
+    .container-quote {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

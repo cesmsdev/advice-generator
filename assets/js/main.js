@@ -1,5 +1,4 @@
 document.querySelector('.btn-dice').addEventListener('click', () =>{
-    $(".btn-dice").attr("disabled");
     GetNewRandomQuote();
 });
 
